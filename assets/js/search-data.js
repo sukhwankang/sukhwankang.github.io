@@ -44,7 +44,28 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-a-post-with-image-galleries",
+        },{id: "dropdown-cv-en",
+              title: "CV(En)",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "";
+              },
+            },{id: "dropdown-cv-中文",
+              title: "CV(中文)",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "";
+              },
+            },{id: "dropdown-cv-deu",
+              title: "CV(DEU)",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "";
+              },
+            },{id: "post-a-post-with-image-galleries",
       
         title: "a post with image galleries",
       
