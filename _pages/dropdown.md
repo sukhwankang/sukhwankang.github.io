@@ -1,16 +1,16 @@
 ---
 layout: page
-title: CVs
+title: CV
 nav: true
-nav_order: 6
+nav_order: 5
 dropdown: true
 children:
   - title: CV(En)
-    permalink: example_pdf.pdf
+    permalink: assets/pdf/example_pdf.pdf
   - title: divider
   - title: CV(中文)
-    permalink: example_pdf.pdf
+    permalink: assets/pdf/example_pdf.pdf
   - title: divider
   - title: CV(DEU)
-    permalink: example_pdf.pdf
+    permalink: assets/pdf/example_pdf.pdf
 ---
