@@ -402,12 +402,11 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 
   .contact-icons {
-    //font-size: 4rem;
-    font-size: 3rem;
+    font-size: 2rem;
 
 
     a {
-/*      img {
+      img {
         width: 3.2rem;
         height: 3.2rem;
         margin-bottom: 1rem;
@@ -423,7 +422,7 @@ ul.task-list input[type="checkbox"] {
           height: 3.5rem;
         }
       }
-*/
+
       i::before {
         color: var(--global-text-color);
         transition-property: all 0.2s ease-in-out;
