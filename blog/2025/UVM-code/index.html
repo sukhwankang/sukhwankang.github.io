@@ -116,7 +116,11 @@
   <span class="p">.</span><span class="n">doAdd</span><span class="p">(</span><span class="n">doAdd0</span><span class="p">),</span>
   <span class="p">.</span><span class="n">result</span><span class="p">(</span><span class="n">result0</span><span class="p">)</span>
 <span class="p">);</span>
-</code></pre></div></div> <h3 id="testbench">Testbench</h3> <div class="language-verilog highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//-----------</span>
+</code></pre></div></div> <h3 id="testbench">Testbench</h3> <div class="language-verilog highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="n">uvm_pkg</span><span class="o">::*</span><span class="p">;</span>
+<span class="cp">`include</span> <span class="s">"uvm_macros.svh"</span>
+<span class="cp">`include</span> <span class="s">"env.sv"</span>
+
+<span class="c1">//-----------</span>
 <span class="c1">// module top</span>
 <span class="c1">//-----------</span>
 <span class="k">module</span> <span class="n">top</span><span class="p">;</span>
