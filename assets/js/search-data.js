@@ -51,15 +51,15 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "";
               },
-            },{id: "post-uvm-practice-1-simulating-an-adder-subtractor",
+            },{id: "post-",
       
-        title: "UVM Practice [1] Simulating an Adder/Subtractor",
+        title: "",
       
-      description: "UVM Practice",
+      description: "",
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2025/UVM-code/";
+          window.location.href = "/blog/2025/2025-01-08-UVM-code/";
         
       },
     },{id: "post-a-post-with-image-galleries",
