@@ -1,48 +1,88 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://sukhwankang.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://sukhwankang.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2025-01-08T08:04:37+00:00</updated><id>https://sukhwankang.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">UVM code</title><link href="https://sukhwankang.github.io/blog/2025/UVM-code/" rel="alternate" type="text/html" title="UVM code"/><published>2025-01-08T00:00:00+00:00</published><updated>2025-01-08T00:00:00+00:00</updated><id>https://sukhwankang.github.io/blog/2025/UVM-code</id><content type="html" xml:base="https://sukhwankang.github.io/blog/2025/UVM-code/"><![CDATA[<p>This theme implements a built-in Jekyll feature, the use of Rouge, for syntax highlighting. It supports more than 100 languages. This example is in C++. All you have to do is wrap your code in markdown code tags:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">systemverilog
-</span><span class="sb">class env extends uvm_env;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://sukhwankang.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://sukhwankang.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2025-01-08T08:11:27+00:00</updated><id>https://sukhwankang.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">UVM code</title><link href="https://sukhwankang.github.io/blog/2025/UVM-code/" rel="alternate" type="text/html" title="UVM code"/><published>2025-01-08T00:00:00+00:00</published><updated>2025-01-08T00:00:00+00:00</updated><id>https://sukhwankang.github.io/blog/2025/UVM-code</id><content type="html" xml:base="https://sukhwankang.github.io/blog/2025/UVM-code/"><![CDATA[<p>This theme implements a built-in Jekyll feature, the use of Rouge, for syntax highlighting. It supports more than 100 languages. This example is in C++. All you have to do is wrap your code in markdown code tags:</p> <figure class="highlight"><pre><code class="language-verilog" data-lang="verilog"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+</pre></td><td class="code"><pre><span class="kt">class</span> <span class="n">env</span> <span class="k">extends</span> <span class="n">uvm_env</span><span class="p">;</span>
 
-  virtual add_sub_if m_if;
+  <span class="kt">virtual</span> <span class="n">add_sub_if</span> <span class="n">m_if</span><span class="p">;</span>
 
-  function new(string name, uvm_component parent = null);
-    super.new(name, parent);
-  endfunction
+  <span class="k">function</span> <span class="k">new</span><span class="p">(</span><span class="kt">string</span> <span class="n">name</span><span class="p">,</span> <span class="n">uvm_component</span> <span class="n">parent</span> <span class="o">=</span> <span class="k">null</span><span class="p">);</span>
+    <span class="k">super</span><span class="p">.</span><span class="k">new</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">parent</span><span class="p">);</span>
+  <span class="k">endfunction</span>
   
-  function void connect_phase(uvm_phase phase);
-    `uvm_info("LABEL", "Started connect phase.", UVM_HIGH);
-    // Get the interface from the resource database.
-    assert(uvm_resource_db#(virtual add_sub_if)::read_by_name(
-      get_full_name(), "add_sub_if", m_if));
-    `uvm_info("LABEL", "Finished connect phase.", UVM_HIGH);
-  endfunction: connect_phase
+  <span class="k">function</span> <span class="kt">void</span> <span class="n">connect_phase</span><span class="p">(</span><span class="n">uvm_phase</span> <span class="n">phase</span><span class="p">);</span>
+    <span class="cp">`uvm_info</span><span class="p">(</span><span class="s">"LABEL"</span><span class="p">,</span> <span class="s">"Started connect phase."</span><span class="p">,</span> <span class="n">UVM_HIGH</span><span class="p">);</span>
+    <span class="c1">// Get the interface from the resource database.</span>
+    <span class="k">assert</span><span class="p">(</span><span class="n">uvm_resource_db</span><span class="p">#(</span><span class="kt">virtual</span> <span class="n">add_sub_if</span><span class="p">)</span><span class="o">::</span><span class="n">read_by_name</span><span class="p">(</span>
+      <span class="n">get_full_name</span><span class="p">(),</span> <span class="s">"add_sub_if"</span><span class="p">,</span> <span class="n">m_if</span><span class="p">));</span>
+    <span class="cp">`uvm_info</span><span class="p">(</span><span class="s">"LABEL"</span><span class="p">,</span> <span class="s">"Finished connect phase."</span><span class="p">,</span> <span class="n">UVM_HIGH</span><span class="p">);</span>
+  <span class="nl">endfunction:</span> <span class="n">connect_phase</span>
 
-  task run_phase(uvm_phase phase);
-    phase.raise_objection(this);
-    `uvm_info("LABEL", "Started run phase.", UVM_HIGH);
-    begin
-      int a = 8'h2, b = 8'h3;
-      parameter int LOOP_COUNT = 10;
-      for(int LOOP_COUNT=0;LOOP_COUNT&lt;10;LOOP_COUNT++) begin
-      @(m_if.cb);
-      m_if.cb.a &lt;= a;
-      m_if.cb.b &lt;= b;
-      m_if.cb.doAdd &lt;= 1'b1;
-        repeat(2) @(m_if.cb);
-        `uvm_info("RESULT", $sformatf("%0d + %0d = %0d", 
-         a, b, m_if.cb.result), UVM_LOW);
-        assert(m_if.cb.result == (a + b))
-        else `uvm_error("RESULT_ERR", "Addition result mismatch!");
-      a=a+1;
-      b=b+1;
-      `uvm_info("CHANGE", $sformatf("a=%0d, b=%0d", a, b), UVM_LOW);
-    end
-    end
-    `uvm_info("LABEL", "Finished run phase.", UVM_HIGH);
-    phase.drop_objection(this);
-  endtask: run_phase
+  <span class="k">task</span> <span class="n">run_phase</span><span class="p">(</span><span class="n">uvm_phase</span> <span class="n">phase</span><span class="p">);</span>
+    <span class="n">phase</span><span class="p">.</span><span class="n">raise_objection</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+    <span class="cp">`uvm_info</span><span class="p">(</span><span class="s">"LABEL"</span><span class="p">,</span> <span class="s">"Started run phase."</span><span class="p">,</span> <span class="n">UVM_HIGH</span><span class="p">);</span>
+    <span class="k">begin</span>
+      <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mh">8'h2</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mh">8'h3</span><span class="p">;</span>
+      <span class="k">parameter</span> <span class="kt">int</span> <span class="n">LOOP_COUNT</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+      <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">LOOP_COUNT</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">LOOP_COUNT</span><span class="o">&lt;</span><span class="mi">10</span><span class="p">;</span><span class="n">LOOP_COUNT</span><span class="o">++</span><span class="p">)</span> <span class="k">begin</span>
+      <span class="o">@</span><span class="p">(</span><span class="n">m_if</span><span class="p">.</span><span class="n">cb</span><span class="p">);</span>
+      <span class="n">m_if</span><span class="p">.</span><span class="n">cb</span><span class="p">.</span><span class="n">a</span> <span class="o">&lt;=</span> <span class="n">a</span><span class="p">;</span>
+      <span class="n">m_if</span><span class="p">.</span><span class="n">cb</span><span class="p">.</span><span class="n">b</span> <span class="o">&lt;=</span> <span class="n">b</span><span class="p">;</span>
+      <span class="n">m_if</span><span class="p">.</span><span class="n">cb</span><span class="p">.</span><span class="n">doAdd</span> <span class="o">&lt;=</span> <span class="mb">1'b1</span><span class="p">;</span>
+        <span class="kt">repeat</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">@</span><span class="p">(</span><span class="n">m_if</span><span class="p">.</span><span class="n">cb</span><span class="p">);</span>
+        <span class="cp">`uvm_info</span><span class="p">(</span><span class="s">"RESULT"</span><span class="p">,</span> <span class="p">$</span><span class="nb">sformatf</span><span class="p">(</span><span class="s">"%0d + %0d = %0d"</span><span class="p">,</span> 
+         <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">m_if</span><span class="p">.</span><span class="n">cb</span><span class="p">.</span><span class="n">result</span><span class="p">),</span> <span class="n">UVM_LOW</span><span class="p">);</span>
+        <span class="k">assert</span><span class="p">(</span><span class="n">m_if</span><span class="p">.</span><span class="n">cb</span><span class="p">.</span><span class="n">result</span> <span class="o">==</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">))</span>
+        <span class="k">else</span> <span class="cp">`uvm_error</span><span class="p">(</span><span class="s">"RESULT_ERR"</span><span class="p">,</span> <span class="s">"Addition result mismatch!"</span><span class="p">);</span>
+      <span class="n">a</span><span class="o">=</span><span class="n">a</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>
+      <span class="n">b</span><span class="o">=</span><span class="n">b</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>
+      <span class="cp">`uvm_info</span><span class="p">(</span><span class="s">"CHANGE"</span><span class="p">,</span> <span class="p">$</span><span class="nb">sformatf</span><span class="p">(</span><span class="s">"a=%0d, b=%0d"</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">),</span> <span class="n">UVM_LOW</span><span class="p">);</span>
+    <span class="k">end</span>
+    <span class="k">end</span>
+    <span class="cp">`uvm_info</span><span class="p">(</span><span class="s">"LABEL"</span><span class="p">,</span> <span class="s">"Finished run phase."</span><span class="p">,</span> <span class="n">UVM_HIGH</span><span class="p">);</span>
+    <span class="n">phase</span><span class="p">.</span><span class="n">drop_objection</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+  <span class="nl">endtask:</span> <span class="n">run_phase</span>
   
-endclass</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>The keyword <code class="language-plaintext highlighter-rouge">linenos</code> triggers display of line numbers. Produces something like this:</p> <figure class="highlight"><pre><code class="language-systemverilog" data-lang="systemverilog"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+<span class="k">endclass</span>
+</pre></td></tr></tbody></table></code></pre></figure> <p>The keyword <code class="language-plaintext highlighter-rouge">linenos</code> triggers display of line numbers. Produces something like this:</p> <figure class="highlight"><pre><code class="language-systemverilog" data-lang="systemverilog"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -141,16 +181,16 @@ Content 2
 <span class="cp">{%</span><span class="w"> </span><span class="nt">endtab</span><span class="w"> </span><span class="cp">%}</span>
 
 <span class="cp">{%</span><span class="w"> </span><span class="nt">endtabs</span><span class="w"> </span><span class="cp">%}</span>
-</code></pre></div></div> <p>With this you can generate visualizations like:</p> <ul id="log" class="tab" data-tab="61b8de22-d77a-484b-bf0b-5301cb36199e" data-name="log"> <li class="active" id="log-php"> <a href="#">php </a> </li> <li id="log-js"> <a href="#">js </a> </li> <li id="log-ruby"> <a href="#">ruby </a> </li> </ul> <ul class="tab-content" id="61b8de22-d77a-484b-bf0b-5301cb36199e" data-name="log"> <li class="active"> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">var_dump</span><span class="p">(</span><span class="s1">'hello'</span><span class="p">);</span>
+</code></pre></div></div> <p>With this you can generate visualizations like:</p> <ul id="log" class="tab" data-tab="a25eadf0-0dad-4691-a1bb-a0f8673437bd" data-name="log"> <li class="active" id="log-php"> <a href="#">php </a> </li> <li id="log-js"> <a href="#">js </a> </li> <li id="log-ruby"> <a href="#">ruby </a> </li> </ul> <ul class="tab-content" id="a25eadf0-0dad-4691-a1bb-a0f8673437bd" data-name="log"> <li class="active"> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">var_dump</span><span class="p">(</span><span class="s1">'hello'</span><span class="p">);</span>
 </code></pre></div></div> </li> <li> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">hello</span><span class="dl">"</span><span class="p">);</span>
 </code></pre></div></div> </li> <li> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">pputs</span> <span class="dl">'</span><span class="s1">hello</span><span class="dl">'</span>
-</code></pre></div></div> </li> </ul> <h2 id="another-example">Another example</h2> <ul id="data-struct" class="tab" data-tab="5586eee8-3063-4b06-94b1-9b51ca7126f2" data-name="data-struct"> <li class="active" id="data-struct-yaml"> <a href="#">yaml </a> </li> <li id="data-struct-json"> <a href="#">json </a> </li> </ul> <ul class="tab-content" id="5586eee8-3063-4b06-94b1-9b51ca7126f2" data-name="data-struct"> <li class="active"> <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">hello</span><span class="pi">:</span>
+</code></pre></div></div> </li> </ul> <h2 id="another-example">Another example</h2> <ul id="data-struct" class="tab" data-tab="8c83ae6a-e0e0-4586-84d0-b6edc60a1382" data-name="data-struct"> <li class="active" id="data-struct-yaml"> <a href="#">yaml </a> </li> <li id="data-struct-json"> <a href="#">json </a> </li> </ul> <ul class="tab-content" id="8c83ae6a-e0e0-4586-84d0-b6edc60a1382" data-name="data-struct"> <li class="active"> <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">hello</span><span class="pi">:</span>
   <span class="pi">-</span> <span class="s2">"</span><span class="s">whatsup"</span>
   <span class="pi">-</span> <span class="s2">"</span><span class="s">hi"</span>
 </code></pre></div></div> </li> <li> <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"hello"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"whatsup"</span><span class="p">,</span><span class="w"> </span><span class="s2">"hi"</span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre></div></div> </li> </ul> <h2 id="tabs-for-something-else">Tabs for something else</h2> <ul id="something-else" class="tab" data-tab="6ccc7c9d-1f0f-451f-92a0-682d3de95113" data-name="something-else"> <li class="active" id="something-else-text"> <a href="#">text </a> </li> <li id="something-else-quote"> <a href="#">quote </a> </li> <li id="something-else-list"> <a href="#">list </a> </li> </ul> <ul class="tab-content" id="6ccc7c9d-1f0f-451f-92a0-682d3de95113" data-name="something-else"> <li class="active"> <p>Regular text</p> </li> <li> <blockquote> <p>A quote</p> </blockquote> </li> <li> <p>Hipster list</p> <ul> <li>brunch</li> <li>fixie</li> <li>raybans</li> <li>messenger bag</li> </ul> </li> </ul>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="code"/><summary type="html"><![CDATA[this is what included tabs in a post could look like]]></summary></entry><entry><title type="html">a post with typograms</title><link href="https://sukhwankang.github.io/blog/2024/typograms/" rel="alternate" type="text/html" title="a post with typograms"/><published>2024-04-29T23:36:10+00:00</published><updated>2024-04-29T23:36:10+00:00</updated><id>https://sukhwankang.github.io/blog/2024/typograms</id><content type="html" xml:base="https://sukhwankang.github.io/blog/2024/typograms/"><![CDATA[<p>This is an example post with some <a href="https://github.com/google/typograms/">typograms</a> code.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">typograms
+</span></code></pre></div></div> </li> </ul> <h2 id="tabs-for-something-else">Tabs for something else</h2> <ul id="something-else" class="tab" data-tab="dbec18da-d741-4b51-b2c5-bf709ec0ccf0" data-name="something-else"> <li class="active" id="something-else-text"> <a href="#">text </a> </li> <li id="something-else-quote"> <a href="#">quote </a> </li> <li id="something-else-list"> <a href="#">list </a> </li> </ul> <ul class="tab-content" id="dbec18da-d741-4b51-b2c5-bf709ec0ccf0" data-name="something-else"> <li class="active"> <p>Regular text</p> </li> <li> <blockquote> <p>A quote</p> </blockquote> </li> <li> <p>Hipster list</p> <ul> <li>brunch</li> <li>fixie</li> <li>raybans</li> <li>messenger bag</li> </ul> </li> </ul>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="code"/><summary type="html"><![CDATA[this is what included tabs in a post could look like]]></summary></entry><entry><title type="html">a post with typograms</title><link href="https://sukhwankang.github.io/blog/2024/typograms/" rel="alternate" type="text/html" title="a post with typograms"/><published>2024-04-29T23:36:10+00:00</published><updated>2024-04-29T23:36:10+00:00</updated><id>https://sukhwankang.github.io/blog/2024/typograms</id><content type="html" xml:base="https://sukhwankang.github.io/blog/2024/typograms/"><![CDATA[<p>This is an example post with some <a href="https://github.com/google/typograms/">typograms</a> code.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">typograms
 </span><span class="sb">+----+
 |    |---&gt; My first diagram!
 +----+</span>
