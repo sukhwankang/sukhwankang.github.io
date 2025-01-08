@@ -55,7 +55,7 @@ ninja.data = [{
       
         title: "UVM code",
       
-      description: "UVM coding with SystemVerilog",
+      description: "UVM with SystemVerilog",
       section: "Posts",
       handler: () => {
         
