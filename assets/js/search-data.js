@@ -44,22 +44,22 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "dropdown-cv-en",
-              title: "CV(En)",
+        },{id: "dropdown-en",
+              title: "En",
               description: "",
               section: "Dropdown",
               handler: () => {
                 window.location.href = "";
               },
-            },{id: "dropdown-cv-中文",
-              title: "CV(中文)",
+            },{id: "dropdown-deu",
+              title: "DEU",
               description: "",
               section: "Dropdown",
               handler: () => {
                 window.location.href = "";
               },
-            },{id: "dropdown-cv-deu",
-              title: "CV(DEU)",
+            },{id: "dropdown-中文",
+              title: "中文",
               description: "",
               section: "Dropdown",
               handler: () => {
