@@ -484,13 +484,6 @@ ninja.data = [{
           window.open("https://www.linkedin.com/in/sukhwankang", "_blank");
         },
       },{
-        id: 'social-github',
-        title: 'GitHub',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://github.com/sukhwankang", "_blank");
-        },
-      },{
         id: 'social-orcid',
         title: 'ORCID',
         section: 'Socials',
@@ -503,6 +496,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("", "_blank");
+        },
+      },{
+        id: 'social-whatsapp',
+        title: 'whatsapp',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://wa.me/", "_blank");
         },
       },{
       id: 'light-theme',
