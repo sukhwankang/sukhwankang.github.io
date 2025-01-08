@@ -550,14 +550,14 @@ footer.sticky-bottom {
 // Blog
 
 .header-bar {
-  //border-bottom: 1px solid var(--global-divider-color);
-  border-bottom: 1px solid var(--global-theme-color);
+  border-bottom: 1px solid var(--global-divider-color);
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 3rem;
 
   h1 {
-    color: var(--global-theme-color);
+    //color: var(--global-theme-color);
+    color: var(--global-text-color);
     font-size: 5rem;
   }
 }
