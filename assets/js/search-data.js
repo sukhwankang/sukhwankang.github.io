@@ -51,11 +51,11 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "";
               },
-            },{id: "post-uvm-code",
+            },{id: "post-uvm-practice-1-simulating-an-adder-subtractor",
       
-        title: "UVM code",
+        title: "UVM Practice [1] Simulating an Adder/Subtractor",
       
-      description: "UVM with SystemVerilog",
+      description: "UVM Practice",
       section: "Posts",
       handler: () => {
         
