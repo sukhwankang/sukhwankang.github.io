@@ -11,7 +11,7 @@ email: you@example.com # your email address
 # facebook_id: # your facebook id
 # flickr_id: # your flickr id
 linkedin_username: sukhwankang # your LinkedIn user name
-github_username: sukhwankang # your GitHub user name
+# github_username: sukhwankang # your GitHub user name
 orcid_id: 0000-0002-5968-1950 # your ORCID ID
 # gitlab_username: # your GitLab user name
 # ieee_id: # your ieeexplore.ieee.org/author/id
@@ -38,7 +38,7 @@ orcid_id: 0000-0002-5968-1950 # your ORCID ID
 # telegram_username: # your Telegram user name
 # unsplash_id: # your unsplash id
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
-# whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
+whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 # wikidata_id: # your wikidata id
 # wikipedia_id: # your wikipedia id (Case sensitive)
 # work_url: # work page URL
