@@ -45,7 +45,9 @@ table.table a {
   }
 
   &:hover:after :not(.nav-item.dropdown) {
-    width: 100%;
+    //width: 100%;
+    width: 50%;
+
   }
 }
 
@@ -407,8 +409,8 @@ ul.task-list input[type="checkbox"] {
 
     a {
       img {
-        width: 2rem;
-        height: 2rem;
+        width: 2.5rem;
+        height: 2.5rem;
         margin-bottom: 1rem;
       }
 
