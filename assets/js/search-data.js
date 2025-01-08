@@ -51,7 +51,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "";
               },
-            },{id: "post-a-post-with-image-galleries",
+            },{id: "post-uvm-code",
+      
+        title: "UVM code",
+      
+      description: "UVM coding with SystemVerilog",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/UVM-code/";
+        
+      },
+    },{id: "post-a-post-with-image-galleries",
       
         title: "a post with image galleries",
       
