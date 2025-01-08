@@ -418,11 +418,6 @@ ninja.data = [{
           title: 'Test announcement',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/news_1/";
-            },},{id: "news-test-announcement",
-          title: 'Test announcement',
-          description: "",
-          section: "News",handler: () => {
               window.location.href = "/news/news_5/";
             },},{id: "news-test-announcement",
           title: 'Test announcement 🚧',
