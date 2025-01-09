@@ -18,18 +18,15 @@ social: true # includes social icons at the bottom of the page
 ### PROFESSIONAL OBJECTIVE
 A self-motivated and proactive engineer committed to embracing new challenges and achieving tangible results. Demonstrates high responsibility and accountability, focusing on contributing skills and experience to collective goals. Pursues extensive knowledge from device-level to system-level perspectives and strives to understand the fundamental theory of analog IPs. Actively participates in cross-functional collaboration with design teams to ensure successful product delivery. Committed to 
 delivering high-quality results while working towards the company's success and strategic objectives.
-<br>
+
 ### Areas of Interest:
 Mixed-Signal Verification, Analog Circuit Design, Mixed-Signal Modeling, UVM
-<br>
+
 ### Languages: 
 - Korean (Native)
 - English (Professional working proficiency)
 - Chinese (Professional working proficiency)
 - German (Elementary proficiency)
-<br>
-### Professional Experience:
-- Analog Mixed-Signal Verification (AMSV) for Industrial/Consumer MCU, Mini-LED Driver
-- Full-chip design from scratch of LIN Transceiver
-- Trained others in design from scratch of CAN-FD Transceiver
-- Designed analog IPs for products
+
+### Skills:
+
