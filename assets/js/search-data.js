@@ -23,28 +23,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "dropdown-en",
-              title: "En",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "";
-              },
-            },{id: "dropdown-deu",
-              title: "DEU",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "";
-              },
-            },{id: "dropdown-中文",
-              title: "中文",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "";
-              },
-            },{id: "post-uvm-practice-1-simple-8-bit-adder-verification-using-uvm",
+        },{id: "post-uvm-practice-1-simple-8-bit-adder-verification-using-uvm",
       
         title: "UVM Practice (1): Simple 8-bit Adder Verification Using UVM",
       
