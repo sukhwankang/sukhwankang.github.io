@@ -1,6 +1,6 @@
 ---
 layout: post
-title: UVM Practice (1): Simple 8-bit Adder Verification Using UVM
+title: UVM Practice (1)":""/" Simple 8-bit Adder Verification Using UVM
 date: 2025-01-09
 description: UVM Practice
 tags: UVM SystemVerilog Verification
