@@ -1,6 +1,6 @@
 ---
 layout: post
-title: UVM Practice (1) Simple UVM Verification using 8-bit Adder
+title: UVM Practice (1): Simple 8-bit Adder Verification Using UVM
 date: 2025-01-09
 description: UVM Practice
 tags: UVM SystemVerilog Verification
@@ -8,8 +8,14 @@ categories: sample-posts
 featured: true
 ---
 
-I implemented simple UVM Verification using 8-bit Adder. 
-This is simulated on [EDA Playground](https://edaplayground.com).
+In this implementation, I created a simple UVM testbench for verifying an 8-bit Adder. The goal is to demonstrate the process of building a simple UVM-based verification environment. The simulation was performed using the popular online platform [EDA Playground](https://edaplayground.com).
+
+
+#### Simple Implementation
+
+- 8-bit Adder and Interface
+- Class env
+- Testbench
 
 ### Block diagram
 
@@ -26,7 +32,6 @@ module ADDER(
   input bit              clk,
   input logic [7:0]      a0,
   input logic [7:0]      b0,
-  // if this is 1, add; else subtract
   input logic           enable,
   output reg [8:0] sum0
 );
@@ -40,8 +45,7 @@ module ADDER(
     end
 endmodule: ADDER
 
-// Interface
-interface adder_if(
+interface dut_if(
   input bit clk,
   input [7:0] a,
   input [7:0] b,
@@ -54,10 +58,10 @@ interface adder_if(
     output    b;
     output    en;
     input     sum;
-  endclocking // clocking block
-endinterface: adder_if
+  endclocking
+endinterface: dut_if
 
-bind ADDER adder_if adder_if0(
+bind ADDER dut_if dut_if1(
   .clk(clk),
   .a(a0),
   .b(b0),
@@ -85,7 +89,7 @@ class env extends uvm_env;
     phase.raise_objection(this);
     `uvm_info("INFO", "Started run phase.", UVM_HIGH);    
     begin
-      int a = 8'd1, b = 8'd2;
+      int a = 1, b = 2;
       parameter int LOOP_CNT = 7;
       `uvm_info("INFO", "Start ADDER Check", UVM_HIGH);
       #200;
@@ -98,8 +102,7 @@ class env extends uvm_env;
         `uvm_info("RESULT", $sformatf("#%0d a=%0d b=%0d Sum=%0d", i, a, b, dut_vif.cb.sum), UVM_LOW);
         assert(dut_vif.cb.sum == (a + b))
          else `uvm_error("ERROR", $sformatf("Error! Result=%0d, not %0d", dut_vif.cb.sum, a+b));
-        a = a*2;
-        b = b*2;
+        a = a*2; b = b*2;
       end
     end
     dut_vif.cb.en <= 1'b0;
@@ -146,9 +149,6 @@ endmodule
         {% include figure.liquid loading="eager" path="assets/blogimg/uvmpractice/1/uvmpractice1_1.PNG" class="img-fluid rounded z-depth-1" zoomable=true caption="Result waveform" %}
     </div>
 </div>
-<div class="caption">
-    Result waveform
-</div>
 
 ### UVM Log
 
@@ -158,4 +158,6 @@ endmodule
     </div>
 </div>
 
-
+### Future Work
+- Enhance the testbench by first incorporating UVM sequences, drivers, and monitors to achieve a more structured verification.
+- Extend it for additional functionality and scalability.
