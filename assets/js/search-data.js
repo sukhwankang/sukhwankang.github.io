@@ -407,40 +407,19 @@ ninja.data = [{
           window.location.href = "/blog/2015/formatting-and-links/";
         
       },
-    },{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
-          description: "",
-          section: "News",},{id: "news-test-announcement",
+    },{id: "news-test-announcement",
           title: 'Test announcement 🚧',
           description: "",
           section: "News",},{id: "news-a-long-announcement-with-details",
           title: 'A long announcement with details',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/announcement_5/";
+              window.location.href = "/news/news_2/";
             },},{id: "news-test-announcement",
           title: 'Test announcement 🚧',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/announcement_6/";
-            },},{id: "news-test-announcement",
-          title: 'Test announcement 🚧🚧',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_7/";
-            },},{id: "news-test-announcement",
-          title: 'Test announcement 🚧🚧',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_8/";
+              window.location.href = "/news/news_3/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
