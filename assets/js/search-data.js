@@ -427,10 +427,15 @@ ninja.data = [{
           section: "News",handler: () => {
               window.location.href = "/news/announcement_5/";
             },},{id: "news-test-announcement",
-          title: 'Test announcement 🚧🚧🚧',
+          title: 'Test announcement 🚧',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_6/";
+            },},{id: "news-test-announcement",
+          title: 'Test announcement 🚧🚧',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/news_7/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
