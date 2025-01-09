@@ -15,18 +15,18 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-### PROFESSIONAL OBJECTIVE
+#### **PROFESSIONAL OBJECTIVE**
 A self-motivated and proactive engineer committed to embracing new challenges and achieving tangible results. Demonstrates high responsibility and accountability, focusing on contributing skills and experience to collective goals. Pursues extensive knowledge from device-level to system-level perspectives and strives to understand the fundamental theory of analog IPs. Actively participates in cross-functional collaboration with design teams to ensure successful product delivery. Committed to 
 delivering high-quality results while working towards the company's success and strategic objectives.
 
-### Areas of Interest:
+#### **Areas of Interest**
 Mixed-Signal Verification, Analog Circuit Design, Mixed-Signal Modeling, UVM
 
-### Languages: 
+#### **Languages**
 - Korean (Native)
 - English (Professional working proficiency)
 - Chinese (Professional working proficiency)
 - German (Elementary proficiency)
 
-### Skills:
+#### **Skills**
 
