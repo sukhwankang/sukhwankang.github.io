@@ -44,9 +44,9 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "";
               },
-            },{id: "post-uvm-practice-1-simulating-an-adder-subtractor",
+            },{id: "post-uvm-practice-1-adder-verification",
       
-        title: "UVM Practice(1) Simulating an Adder/Subtractor",
+        title: "UVM Practice (1) Adder Verification",
       
       description: "UVM Practice",
       section: "Posts",
