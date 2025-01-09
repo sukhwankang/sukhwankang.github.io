@@ -16,12 +16,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/news/";
           },
-        },{id: "nav-projects",
-          title: "Projects",
-          description: "A growing collection of your cool projects.",
+        },{id: "nav-blog",
+          title: "Blog",
+          description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/projects/";
+            window.location.href = "/blog/";
           },
         },{id: "dropdown-en",
               title: "En",
@@ -44,15 +44,15 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "";
               },
-            },{id: "post-uvm-practice-1-adder-verification",
+            },{id: "post-uvm-practice-1-simple-uvm-verification-using-8-bit-adder",
       
-        title: "UVM Practice (1) Adder Verification",
+        title: "UVM Practice (1) Simple UVM Verification using 8-bit Adder",
       
       description: "UVM Practice",
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2025/UVM-code/";
+          window.location.href = "/blog/2025/UVMPractice-1/";
         
       },
     },{id: "post-a-post-with-image-galleries",
