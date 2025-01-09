@@ -149,7 +149,7 @@ endmodule
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/blogimg/uvmpractice/1/uvmpractice1_1.PNG" class="img-fluid rounded z-depth-1" caption="Result waveform" %}
+        {% include figure.liquid loading="eager" path="assets/blogimg/uvmpractice/1/uvmpractice1_1.PNG" class="img-fluid rounded z-depth-1" zoomable=true caption="Result waveform" %}
     </div>
 </div>
 
