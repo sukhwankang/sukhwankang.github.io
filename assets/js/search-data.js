@@ -437,15 +437,15 @@ ninja.data = [{
           section: "News",handler: () => {
               window.location.href = "/news/announcement_7/";
             },},{id: "news-test-announcement",
-          title: 'Test announcement 🚧🚧🚧',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/news_8/";
-            },},{id: "news-test-announcement",
           title: 'Test announcement 🚧🚧',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_9/";
+            },},{id: "news-test-announcement",
+          title: 'Test announcement 🚧🚧🚧',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/news_8/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
