@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2025-01-09 22:40:00-100000
+date: 2025-01-08 22:40:00-0400
 title: Test announcement 🚧🚧
 inline: false
 related_posts: false
