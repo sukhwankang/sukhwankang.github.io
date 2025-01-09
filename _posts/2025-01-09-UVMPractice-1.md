@@ -162,7 +162,6 @@ endmodule
     </div>
 </div>
 
-<br>
 
 #### **Next**
 Enhance the testbench by first incorporating UVM sequences, drivers, and monitors to achieve a more structured verification.
