@@ -1,6 +1,6 @@
 ---
 layout: post
-title: UVM Practice (1)":""/"/:/ Simple 8-bit Adder Verification Using UVM
+title: "UVM Practice (1): Simple 8-bit Adder Verification Using UVM"
 date: 2025-01-09
 description: UVM Practice
 tags: UVM SystemVerilog Verification
@@ -21,7 +21,7 @@ In this implementation, I created a simple UVM testbench for verifying an 8-bit 
 
 <div class="row" style="text-align: center;">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" max-width="300px" max-height="auto" path="assets/blogimg/uvmpractice/1/uvmpractice1_bd.PNG" class="img-fluid rounded z-depth-1" zoomable=true caption="Block Diagram" %}
+        {% include figure.liquid loading="eager" max-width="300px" max-height="auto" path="assets/blogimg/uvmpractice/1/uvmpractice1_bd.PNG" class="img-fluid rounded z-depth-1" caption="Block Diagram" %}
     </div>
 </div>
 
@@ -146,7 +146,7 @@ endmodule
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/blogimg/uvmpractice/1/uvmpractice1_1.PNG" class="img-fluid rounded z-depth-1" zoomable=true caption="Result waveform" %}
+        {% include figure.liquid loading="eager" path="assets/blogimg/uvmpractice/1/uvmpractice1_1.PNG" class="img-fluid rounded z-depth-1" caption="Result waveform" %}
     </div>
 </div>
 
@@ -154,7 +154,7 @@ endmodule
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/blogimg/uvmpractice/1/uvmpractice1_2.PNG" class="img-fluid rounded z-depth-1" zoomable=true caption="UVM log"%}
+        {% include figure.liquid loading="eager" path="assets/blogimg/uvmpractice/1/uvmpractice1_2.PNG" class="img-fluid rounded z-depth-1" caption="UVM log"%}
     </div>
 </div>
 
