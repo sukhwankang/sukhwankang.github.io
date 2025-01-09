@@ -44,9 +44,9 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "";
               },
-            },{id: "post-uvm-practice-1-quot-quot-quot-quot-simple-8-bit-adder-verification-using-uvm",
+            },{id: "post-uvm-practice-1-simple-8-bit-adder-verification-using-uvm",
       
-        title: "UVM Practice (1)&quot;:&quot;&quot;/&quot;/:/ Simple 8-bit Adder Verification Using UVM",
+        title: "UVM Practice (1): Simple 8-bit Adder Verification Using UVM",
       
       description: "UVM Practice",
       section: "Posts",
