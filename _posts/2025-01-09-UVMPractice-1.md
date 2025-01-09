@@ -11,13 +11,13 @@ featured: true
 In this implementation, I created a simple UVM testbench for verifying an 8-bit Adder. The goal is to demonstrate the process of building a simple UVM-based verification environment. The simulation was performed using the popular online platform [EDA Playground](https://edaplayground.com).
 
 
-### Simple Implementation
+#### Implementation
 
 - 8-bit Adder and Interface
 - Class env
 - Testbench
 
-### Block diagram
+#### Block diagram
 
 <div class="row" style="text-align: center;">
     <div class="col-sm mt-3 mt-md-0">
@@ -25,8 +25,8 @@ In this implementation, I created a simple UVM testbench for verifying an 8-bit 
     </div>
 </div>
 
-<br>
-### 8-bit Adder and Interface
+
+#### 8-bit Adder and Interface
 
 ```verilog
 module ADDER(
@@ -72,7 +72,7 @@ bind ADDER dut_if dut_if1(
 ```
 
 
-### Class env
+#### Class env
 
 ```verilog
 class env extends uvm_env;
@@ -117,7 +117,7 @@ endclass
 ```
 
 
-### Testbench
+#### Testbench
 
 ```verilog
 import uvm_pkg::*;
@@ -142,10 +142,10 @@ module top;
 endmodule
 ```
 
-### Option
+#### Option
 +UVM_VERBOSITY=UVM_HIGH +access+r
 
-### Result Waveform
+#### Result Waveform
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -154,7 +154,7 @@ endmodule
 </div>
 
 
-### UVM Log
+#### UVM Log
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -163,6 +163,7 @@ endmodule
 </div>
 
 <br>
-<br>
+
+#### Next?
 Enhance the testbench by first incorporating UVM sequences, drivers, and monitors to achieve a more structured verification.
 Extend it for additional functionality and scalability.
