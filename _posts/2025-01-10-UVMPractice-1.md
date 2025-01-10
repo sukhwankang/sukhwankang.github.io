@@ -167,7 +167,7 @@ endmodule
 </div>
 
 
-#### **Next step**
-The next step is to enhance the testbench by first incorporating UVM sequences, drivers, and monitors to achieve a more structured verification.
+#### **What's Next**
+The next is to enhance the testbench by first incorporating UVM sequences, drivers, and monitors to achieve a more structured verification.
 
 ---
