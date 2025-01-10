@@ -6,6 +6,7 @@ description: UVM Practice
 tags: UVM SystemVerilog Verification
 categories: sample-posts
 thumbnail: assets/blogimg/uvmpractice/1/uvmpractice1_bd.PNG
+featured: false
 related_posts: false
 toc:
   beginning: true
@@ -13,7 +14,6 @@ toc:
 
 In this implementation, I created a simple UVM testbench for verifying an 8-bit Adder. The goal is to demonstrate the process of building a simple UVM-based verification environment. The simulation was performed using the popular online platform [EDA Playground](https://edaplayground.com).
 
----
 
 #### **Implementation**
 
@@ -166,6 +166,8 @@ endmodule
     </div>
 </div>
 
----
+
 #### **Next step**
 The next step is to enhance the testbench by first incorporating UVM sequences, drivers, and monitors to achieve a more structured verification.
+
+---
