@@ -1,15 +1,19 @@
 ---
 layout: post
 title: "UVM Practice (1): Simple 8-bit Adder Verification Using UVM"
-date: 2025-01-09
+date: 2025-01-10 10:00:00+0900
 description: UVM Practice
 tags: UVM SystemVerilog Verification
 categories: sample-posts
-featured: true
+thumbnail: assets/blogimg/uvmpractice/1/uvmpractice1_bd.PNG
+related_posts: false
+toc:
+  beginning: true
 ---
 
 In this implementation, I created a simple UVM testbench for verifying an 8-bit Adder. The goal is to demonstrate the process of building a simple UVM-based verification environment. The simulation was performed using the popular online platform [EDA Playground](https://edaplayground.com).
 
+---
 
 #### **Implementation**
 
@@ -28,7 +32,7 @@ In this implementation, I created a simple UVM testbench for verifying an 8-bit 
 
 #### **8-bit Adder and Interface**
 
-```systemverilog
+```verilog
 module ADDER(
   input bit              clk,
   input logic [7:0]      a0,
@@ -74,7 +78,7 @@ bind ADDER dut_if dut_if1(
 
 #### **Class env**
 
-```systemverilog
+```verilog
 class env extends uvm_env;
   virtual dut_if dut_vif;
 
@@ -119,7 +123,7 @@ endclass
 
 #### **Testbench**
 
-```systemverilog
+```verilog
 import uvm_pkg::*;
 `include "uvm_macros.svh"
 
@@ -143,7 +147,7 @@ endmodule
 ```
 
 #### **Simulation Option**
-+UVM_VERBOSITY=UVM_HIGH +access+r
+- +UVM_VERBOSITY=UVM_HIGH +access+r
 
 #### **Result Waveform**
 
@@ -154,7 +158,7 @@ endmodule
 </div>
 
 
-#### *UVM Log**
+#### **UVM Log**
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -162,7 +166,6 @@ endmodule
     </div>
 </div>
 
-
-#### **Next**
-Enhance the testbench by first incorporating UVM sequences, drivers, and monitors to achieve a more structured verification.
-Extend it for additional functionality and scalability.
+---
+#### **Next step**
+The next step is to enhance the testbench by first incorporating UVM sequences, drivers, and monitors to achieve a more structured verification.
