@@ -28,7 +28,7 @@ In this implementation, I created a simple UVM testbench for verifying an 8-bit 
 
 #### **8-bit Adder and Interface**
 
-```verilog
+```systemverilog
 module ADDER(
   input bit              clk,
   input logic [7:0]      a0,
@@ -74,7 +74,7 @@ bind ADDER dut_if dut_if1(
 
 #### **Class env**
 
-```verilog
+```systemverilog
 class env extends uvm_env;
   virtual dut_if dut_vif;
 
@@ -119,7 +119,7 @@ endclass
 
 #### **Testbench**
 
-```verilog
+```systemverilog
 import uvm_pkg::*;
 `include "uvm_macros.svh"
 
