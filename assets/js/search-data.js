@@ -393,7 +393,7 @@ ninja.data = [{
           title: 'Test announcement 🚧',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/news_3/";
+              window.location.href = "/news/news_2/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
